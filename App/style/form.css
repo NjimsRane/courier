@@ -1,0 +1,123 @@
+.register{
+    position: relative;
+    width:100%;
+    min-height:calc(100vh - 8rem );
+    padding:1rem;
+}
+.register .section{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow:var(--shadow1);
+    width:30rem;
+    border-radius:5px;
+    background-color:var(--colorWhite);
+}
+.register hr{
+    border:1px solid rgb(212, 212, 212);
+}
+
+.register h1{
+    margin:1rem;
+    font-size:1.4rem;
+    color:var(--colorGray);
+    font-weight: 400;
+}
+
+.register .form{
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    padding:1rem ;
+    background-color:var(--colorWhite);
+    border-radius:0 0 5px 5px;
+}
+
+.form label{
+    display:flex;
+    align-items:center;
+}
+.form button{
+    width:10%;
+    height:3rem;
+    border-radius:0 3px 3px 0;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    background-color:var(--secondary);
+    display:grid;
+    place-items:center;
+}
+.form input:not(input[type='checkbox']){
+    width:90%;
+    height:3rem;
+    border:1px solid var(--colorGray);
+    border-right: 0;
+    border-radius:4px 0 0 4px;
+    padding:1rem;
+    outline:none;
+    transition:all 0.5s ease;
+    position: relative;        
+}
+
+.form input::placeholder{
+    text-transform: capitalize;
+}
+
+.form input:focus{
+    border-color:var(--colorBlue);
+}
+        
+.form img{
+    width:1.8rem;
+}
+        
+.form .submit{
+    color:var(--colorWhite);
+    font-size:1.4rem;
+    border:none;
+    cursor: pointer;
+    background-color:var(--colorButton1);
+    width:8rem;
+    height:3rem;
+    text-transform: capitalize;
+    border-radius:4px;
+}
+
+.form small{
+    color:var(--colorButton1);
+}
+
+.check{
+    display:flex;
+    justify-content:space-between;
+}
+
+.check input{
+    cursor: pointer;
+}
+
+.check span{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.check label{
+    text-transform: capitalize;
+    font-size:1.2rem;
+}
+    
+.link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.link a{
+    color:var(--colorBlue);
+    font-size:1.4rem;
+    text-transform: capitalize;
+}
+

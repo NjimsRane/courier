@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NjimsRane">
+    <meta name="description" content="Login to your account here to be abble to access and track your courier">
+    <title>A courier | sing in</title>
+    <!-- link -->
+    <link rel="shortcut icon" href="/Images/logo/logo-no-background.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/App/style/form.css">
+    <link rel="stylesheet" href="/App/style/style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header container" id="header">
+        <a href="/index.html" aria-label="logo" class="logo">
+            <strong>Njims</strong><sub>Rane</sub>
+        </a>
+    </header>
+    <!-- header end -->
+
+    <!-- main end -->
+    <main class="register">
+        <section class="section">
+            <h1>Login form</h1>
+            <hr>
+            <form action="#" class="form" id="register-form">
+                <p>
+                    <label aria-label="user mail">
+                        <input type="email" placeholder="email" id="login-email">
+                        <button aria-label="email icon"><i class="fa-solid fa-envelope"></i></button>
+                    </label>
+                    <small id="email-login-error"></small>
+                </p>
+                <p>
+                    <label>
+                        <input type="password" placeholder="password" class="pass" id="login-pass">
+
+                        <button aria-label="show and hide password">
+                            <img src="/Images/pass/hide.png" alt="hide password">
+                        </button>
+                    </label>
+                    <small id="pass-login-error"></small>
+                </p>
+
+                <p class="check">
+                    <span>
+                        <input type="checkbox" id="register">
+                        <label for="register" aria-label="check box to remember an account">remember me</label>
+                    </span>
+                    <button type="submit" class="submit">sign in</button>
+                </p>
+                <p class="link">
+                    <a href="./register.html" aria-label="link to register page">Sign Up here</a>
+                </p>
+            </form>
+        </section>
+    </main>
+    <!-- main end -->
+</body>
+<!-- script -->
+<script src="/App/js/form.js"></script>
+
+</html>
