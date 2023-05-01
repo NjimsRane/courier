@@ -1,10 +1,10 @@
-.register{
+.form-container{
     position: relative;
     width:100%;
     min-height:calc(100vh - 8rem );
     padding:1rem;
 }
-.register .section{
+.form-container .section{
     position: absolute;
     top:50%;
     left:50%;
@@ -14,18 +14,18 @@
     border-radius:5px;
     background-color:var(--colorWhite);
 }
-.register hr{
+.form-container hr{
     border:1px solid rgb(212, 212, 212);
 }
 
-.register h1{
+.form-container h1{
     margin:1rem;
     font-size:1.4rem;
     color:var(--colorGray);
     font-weight: 400;
 }
 
-.register .form{
+.form-container .form{
     display: flex;
     flex-direction:column;
     gap:2rem;
@@ -38,7 +38,7 @@
     display:flex;
     align-items:center;
 }
-.form button{
+.input-icon{
     width:10%;
     height:3rem;
     border-radius:0 3px 3px 0;
@@ -60,14 +60,15 @@
     transition:all 0.5s ease;
     position: relative;        
 }
-
+.form input:not(input[type='checkbox']):focus{
+    border:1px solid var(--colorBlue);
+    border-right:0;
+}
 .form input::placeholder{
     text-transform: capitalize;
 }
 
-.form input:focus{
-    border-color:var(--colorBlue);
-}
+
         
 .form img{
     width:1.8rem;
@@ -78,7 +79,7 @@
     font-size:1.4rem;
     border:none;
     cursor: pointer;
-    background-color:var(--colorButton1);
+    background-color:var(--colorButtonRed);
     width:8rem;
     height:3rem;
     text-transform: capitalize;
@@ -86,7 +87,8 @@
 }
 
 .form small{
-    color:var(--colorButton1);
+    color:var(--colorButtonRed);
+    font-size:1.3rem;
 }
 
 .check{
@@ -120,4 +122,11 @@
     font-size:1.4rem;
     text-transform: capitalize;
 }
+.fa-solid{
+    font-size:1.8rem;
+}
 
+/* .showError .form input:not(input[type='checkbox']){
+    border:1px solid var(--colorButtonRed);
+    border-right:none;
+} */
