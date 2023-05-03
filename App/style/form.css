@@ -61,7 +61,7 @@
     position: relative;        
 }
 .form input:not(input[type='checkbox']):focus{
-    border:1px solid var(--colorBlue);
+    border:1px solid var(--colorBlue1);
     border-right:0;
 }
 .form input::placeholder{
@@ -79,7 +79,7 @@
     font-size:1.4rem;
     border:none;
     cursor: pointer;
-    background-color:var(--colorButtonRed);
+    background-color:var( --colorBlue1);
     width:8rem;
     height:3rem;
     text-transform: capitalize;
@@ -87,7 +87,7 @@
 }
 
 .form small{
-    color:var(--colorButtonRed);
+    color:var(--colorRed);
     font-size:1.3rem;
 }
 
@@ -118,7 +118,7 @@
 }
 
 .link a{
-    color:var(--colorBlue);
+    color:var(--colorRed);
     font-size:1.4rem;
     text-transform: capitalize;
 }

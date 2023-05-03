@@ -29,7 +29,7 @@ h3{
     letter-spacing:1px;
 }
 .question-title button {
-    background-color:var(--colorBlue);
+    background-color:var( --colorBlue1);
     width:2rem;
     color:var(--colorWhite);
 }
@@ -53,7 +53,7 @@ h3{
 
 /* classlist in js */
 .show-text .question-title button{
-    background-color:var(--colorButtonRed);
+    background-color:var( --colorRed);
 }
 .show-text .button-minus{
     display:inline-flex;

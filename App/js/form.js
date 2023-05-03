@@ -1,3 +1,4 @@
+// /*****************forms ***************/
 const loginForm = document.querySelector('#form-login');
 const emailLogin = document.querySelector('#login-email');
 const emailLoginError = document.querySelector('#email-login-error');
@@ -6,7 +7,7 @@ const passLoginError = document.querySelector('#pass-login-error');
 const showPasswordBtn = document.querySelector('.hide-show-password');
 const eyeImage = document.querySelector('.eye-img');
 
-
+// /*****************forms logic***************/
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     if (emailLogin.value === '' && passLogin.value === '') {
@@ -26,9 +27,6 @@ loginForm.addEventListener('submit', (e) => {
         passLoginError.textContent = '';
     }
 });
-
-
-
 showPasswordBtn.addEventListener('click', function () {
     if (passLogin.value === "") {
         return;
