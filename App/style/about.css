@@ -1,0 +1,83 @@
+
+.wrapper h1{
+    text-align:center;
+}
+.about-us{
+    display:grid;
+   /* grid-template-rows: min-content 1fr min-content; */
+     
+    grid-template-areas:
+        'mission'
+        'vision'
+        'target'
+        'history'
+        'values'
+    ;
+    gap:2rem;
+    margin-block:2rem;
+}
+
+.about-us h2{
+    margin-bottom:1rem;
+}
+
+.about-us p{
+    font-size:1.2rem;
+    text-indent:2rem;
+}
+
+.about-us div{
+    flex:1;
+    box-shadow:0 2px 3px 0 rgba(0,0,0,0.2);
+    padding:1rem 2rem;
+    color:var(--primary);
+}
+
+.mission{
+    grid-area:mission;
+    background-color:var(--colorBlue1);
+}
+.vision{
+    grid-area:vision;
+    background-color:var(--colorRed);
+}
+.target{
+    grid-area:target;
+    background-color:var(--footer);
+}
+.history{
+    grid-area:history;
+    background-color:var(--colorLightGrey);
+}
+.values{
+    grid-area:values;
+    background-color:var(  --colorBlack);
+}
+
+
+
+/* media queries*/
+
+@media screen and (min-width:700px) {
+    .about-us{
+      
+        grid-template-areas:
+        'mission mission mission'
+        'target values vision'
+        ' history history history'
+        ;
+        
+    }
+}
+@media screen and (min-width:900px) {
+    
+    .about-us{
+      
+        grid-template-areas:
+        'mission mission  target'
+        'history vision vision'
+        ' history values values'
+        ;
+        
+    }
+}
